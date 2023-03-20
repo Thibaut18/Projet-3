@@ -199,6 +199,10 @@ nav a:hover {
     font-size: 120%;
 }
 
+.hidden-icon {
+    display: none;
+}
+
 form {
     display: flex;
     flex-direction: row;
@@ -267,21 +271,119 @@ html, body {
 }
 
 .hebergements-cards {
-    width: 80%;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
 }
 
-.card-link {
-    text-decoration: none;
-    color:black;
+.hebergements-cards .card {
+    width: 30%;
+    height: 207.25px;
+    margin-top: 33px;
 }
 
+.hebergements-cards .card-content {
+    width: 80%;
+    padding-left: 3px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
 
+.hebergements-cards .card-title {
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
 
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
 
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
 
+.more-hebergements {
+    display: flex;
+    padding-top: 3%;
+}
+
+/****** Activités ***********/
+
+.activities-cards .card img {
+    height: 380px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.activities-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 15px;
+}
+
+.activities-cards .card {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0px;
+}
+
+.activities-cards .card h3 {
+    padding: 5px 0px 5px 20px;
+}
+
+.activities-cards .card-title {
+}
+
+#activite-marseille .section-title {
+    display: flex;
+    margin: 62px 0px 30px 35px;
+}
+
+/****** Footer ***********/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: var(--main-bg-color);
+    height: 189px;
+    margin-top: 55px;
+    margin-bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin-right: auto;
+}
+
+.footer-title {
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-list li {
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
